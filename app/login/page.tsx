@@ -1,6 +1,7 @@
+import Link from 'next/link'
 import React from 'react'
 
-const page = () => {
+const Login = () => {
     return(
         <>
           <div className='flex bg-[#E2DFD2] min-h-screen items-center justify-center'>
@@ -16,11 +17,12 @@ const page = () => {
                     className='border-2 outline-none rounded-md px-2 py-1'
                     />
                 </div>
-                <button className='bg-[#28282B] hover:bg-[#343434] font-bold text-white px-4 py-1 rounded-lg w-full'>Login</button>
+                <button className='bg-[#28282B] hover:bg-[#343434] font-bold text-white px-4 py-1 rounded-lg w-full mb-4'>Login</button>
+                <p className="font-medium text-sm">Don&apos;t Have an account?  <Link className="text-blue-600 font-semibold" href={"/signup"}>Signup</Link></p>
             </div>
           </div>
         </>
     )
 }
 
-export default page
+export default Login

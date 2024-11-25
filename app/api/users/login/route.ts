@@ -1,4 +1,5 @@
 import User from "@/models/userModel";
+import corsMiddleware from '@/corsMiddleware';
 import { NextRequest, NextResponse } from "next/server";
 import bcryptjs from 'bcryptjs'
 import { connect } from "@/database/dbConnection";
@@ -7,6 +8,9 @@ import jwt from 'jsonwebtoken'
 connect();
 
 export async function POST(req: NextRequest) {
+
+    await corsMiddleware(req);
+
     try {
         const body = await req.json()
         const { email, password } = body

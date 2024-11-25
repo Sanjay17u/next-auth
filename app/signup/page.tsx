@@ -20,7 +20,9 @@ const Signup = () => {
 
   const submitHandler = async () => {
     try {
-      const res = await axios.post("/api/users/signup", user);
+      const res = await axios.post("/api/users/signup", user, {
+        withCredentials: true,
+      });
       router.push("/login")
       console.log(res.data.message)
       toast.success(res.data.message)

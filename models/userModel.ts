@@ -10,6 +10,7 @@ const userSchema = new mongoose.Schema({
     email:{
         type: String,
         required: true,
+        unique: true,
     },
 
     password:{
@@ -19,5 +20,5 @@ const userSchema = new mongoose.Schema({
 }, {timestamps:true})
 
 
-const User = mongoose.models.users || mongoose.model("users", userSchema)
+const User = mongoose.models.users || mongoose.model("users", userSchema.index({ email: 1 }))
 export default User

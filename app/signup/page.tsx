@@ -3,6 +3,7 @@ import axios from "axios";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 
 const Signup = () => {
 
@@ -20,11 +21,13 @@ const Signup = () => {
   const submitHandler = async () => {
     try {
       const res = await axios.post("/api/users/signup", user);
-      console.log(res)
       router.push("/login")
+      console.log(res.data.message)
+      toast.success(res.data.message)
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       console.log(error)
+      toast(error.response.data.message)
     }
   }
 

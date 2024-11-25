@@ -20,6 +20,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#F5F5F5] flex items-center justify-center">
       <div className="bg-white p-8 shadow-lg rounded-xl w-[350px] max-w-full hover:scale-105 transition-transform duration-300">
         <h1 className="text-2xl font-semibold text-[#333] mb-3 text-center">Welcome!</h1>
+        <p className="text-[#555] text-center mb-3 text-sm font-semibold">I am <a className="text-gray-700 hover:text-blue-500 transition-colors duration-300" target="_blank" rel="noopener noreferrer" href="https://github.com/Sanjay17u">Sanjay Solanki</a></p>
         <p className="text-[#555] text-center mb-6 text-sm">In this app, I used the following:</p>
         <ul className="space-y-2 text-sm text-[#555] mb-6">
           <li>🔹 Next.js</li>

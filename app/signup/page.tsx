@@ -1,8 +1,12 @@
 "use client"
+import axios from "axios";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Signup = () => {
+
+  const router = useRouter()
 
   const [user, setUser] = useState({
     username: "",
@@ -13,8 +17,15 @@ const Signup = () => {
   const [disable, setDisable] = useState(true)
 
 
-  const submitHandler = () => {
-    console.log(user)
+  const submitHandler = async () => {
+    try {
+      const res = await axios.post("/api/users/signup", user);
+      console.log(res)
+      router.push("/login")
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    } catch (error: any) {
+      console.log(error)
+    }
   }
 
 

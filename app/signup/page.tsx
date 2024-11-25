@@ -42,7 +42,7 @@ const Signup = () => {
 
   return (
     <>
-      <div className="flex bg-[#E2DFD2] min-h-screen items-center justify-center">
+      <div className="flex bg-[#F5F5F5] min-h-screen items-center justify-center">
         <div className="bg-white text-black p-10 shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300">
           <h1 className="font-bold">Signup</h1>
           <div className="flex flex-col my-4">

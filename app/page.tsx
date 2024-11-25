@@ -20,10 +20,10 @@ export default function Home() {
     <>
       <main className="flex bg-[#E2DFD2] min-h-screen items-center justify-center">
         <div className="bg-white text-black p-10 shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300">
-          <h1>Hello There..!</h1>
+          <h1 className="font-bold mb-4">Hello There..!</h1>
           <button
             onClick={logoutHandler}
-            className="bg-[#28282B] hover:bg-[#343434] font-bold text-white px-4 py-1 rounded-lg"
+            className="bg-[#28282B] hover:bg-[#343434] font-bold text-white px-4 py-1 w-full rounded-lg"
           >
             Logout
           </button>

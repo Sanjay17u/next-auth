@@ -17,18 +17,28 @@ export default function Home() {
   };
 
   return (
-    <>
-      <main className="flex bg-[#E2DFD2] min-h-screen items-center justify-center">
-        <div className="bg-white text-black p-10 shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300">
-          <h1 className="font-bold mb-4">Hello There..!</h1>
-          <button
-            onClick={logoutHandler}
-            className="bg-[#28282B] hover:bg-[#343434] font-bold text-white px-4 py-1 w-full rounded-lg"
-          >
-            Logout
-          </button>
-        </div>
-      </main>
-    </>
+    <main className="min-h-screen bg-[#F5F5F5] flex items-center justify-center">
+      <div className="bg-white p-8 shadow-lg rounded-xl w-[350px] max-w-full hover:scale-105 transition-transform duration-300">
+        <h1 className="text-2xl font-semibold text-[#333] mb-3 text-center">Welcome!</h1>
+        <p className="text-[#555] text-center mb-6 text-sm">In this app, I used the following:</p>
+        <ul className="space-y-2 text-sm text-[#555] mb-6">
+          <li>🔹 Next.js</li>
+          <li>🔹 Tailwind CSS</li>
+          <li>🔹 MongoDB Database Connectivity</li>
+          <li>🔹 bcrypt.js</li>
+          <li>🔹 JWT Token</li>
+          <li>🔹 Middleware for Route Protection</li>
+          <li>🔹 Axios for GET and POST methods</li>
+          <li>🔹 <a className="text-gray-700 hover:text-blue-500 transition-colors duration-300" target="_blank" rel="noopener noreferrer" href="">Vercel Deployment</a> & <a className="text-gray-700 hover:text-blue-500 transition-colors duration-300" target="_blank" rel="noopener noreferrer" href="https://github.com/Sanjay17u/next-auth">Git Push</a></li>
+        </ul>
+        <button
+          onClick={logoutHandler}
+          className="w-full bg-[#28282B] hover:bg-[#343434] text-white font-bold py-2 rounded-lg transition-colors duration-300 transform hover:scale-105"
+        >
+          Logout
+        </button>
+      </div>
+    </main>
   );
+
 }

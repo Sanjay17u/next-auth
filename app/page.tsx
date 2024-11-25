@@ -29,7 +29,7 @@ export default function Home() {
           <li>🔹 JWT Token</li>
           <li>🔹 Middleware for Route Protection</li>
           <li>🔹 Axios for GET and POST methods</li>
-          <li>🔹 <a className="text-gray-700 hover:text-blue-500 transition-colors duration-300" target="_blank" rel="noopener noreferrer" href="">Vercel Deployment</a> & <a className="text-gray-700 hover:text-blue-500 transition-colors duration-300" target="_blank" rel="noopener noreferrer" href="https://github.com/Sanjay17u/next-auth">Git Push</a></li>
+          <li>🔹 <a className="text-gray-700 hover:text-blue-500 transition-colors duration-300" target="_blank" rel="noopener noreferrer" href="">Vercel Deployment</a> & <a className="text-gray-700 hover:text-blue-500 transition-colors duration-300" target="_blank" rel="noopener noreferrer" href="https://github.com/Sanjay17u/next-auth">Git Hub</a></li>
         </ul>
         <button
           onClick={logoutHandler}
